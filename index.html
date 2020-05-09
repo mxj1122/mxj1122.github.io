@@ -1,26 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ZH-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>主页</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./less/bass.css">
+    <link rel="stylesheet" href="./less/wow.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/wow.js"></script>
 </head>
-<style>
-    .head {
-        height: 200px;
-        background:linear-gradient(to right, rgb(110, 78, 78),rgb(73, 2, 67),rgb(3, 2, 66));
-        font-size: 60px;
-        color: #fff;
-        line-height: 200px;
-        text-align: center;
-        font-weight: 700;
-    }
 
-</style>
 <body>
-    <div class="head">我是你大爷</div>
-    <a href="http://www.baidu.com">百度</a>
-    <h1>mxj</h1>
+    <!-- 顶部模块 -->
+    <div class="top">
+        <!-- 顶部版心 -->
+        <div class="w1 top-head">
+            <!-- logo-bz -->
+            <div class="logo-bz">
+                <img src="./images/logo-bz.jpg" alt="logo-bz">
+            </div>
+            <div class="logo-bz-shadow"></div>
+            <!--顶部导航  -->
+            <ul class="top-banner-l">
+                <li class="white">游戏
+                    <i class="youxi-icon"></i>
+                </li>
+                <li>商城</li>
+                <li>新闻</li>
+                <li>电子竞技
+                    <i class="jingji-icon"></i>
+                </li>
+            </ul>
+            <ul class="top-banner-r">
+                <li class="fr">我的账户
+                    <i class="zhanghu-icon"></i>
+                </li>
+                <li class="fr">支持</li>
+            </ul>
+        </div>
+        <!-- 点击显示的展示区 -->
+        <!-- 游戏 -->
+        <div class="youxi-show">
+            <em class="youxi-icon-t"></em>
+            <div class="youxi-show-t">
+                <div class="youxi-top">
+                    <div class="w1 youxi-content">
+                        <ul>
+                            <li>
+                                <img src="./images/card_overwatch_CN_85c98611cefd3018.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_world_of_warcraft_CN_c4bebe45e5af0993.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_hearthstone_CN_538b49564ab2122a.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_heroes_of_the_storm_CN_bacafbbddcf92348.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_warcraft_3_reforged_CN_06e5c9afabfab0d9.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_diablo_3_CN_0d57444efa52a79b.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_diablo_immortal_CN_404c9d9d0380d600.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_starcraft_2_CN_de310c5ddfb63a49.jpg">
+                            </li>
+                            <li>
+                                <img src="./images/card_starcraft_remastered_CN_1b9cb434a8fce41e.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="youxi-bot">
+                    <div class="w1 youxi-link">
+                        <ul>
+                            <li>
+                                <div class="icon-01 li-icon">
+                                    <img src="./images/icon-01.jpg" alt="">
+                                </div>
+                                <i>更多游戏</i>
+                            </li>
+                            <li>
+                                <div class="icon-02 li-icon">
+                                    <img src="./images/icon-02.jpg" alt="">
+                                </div>
+                                <i>下载</i>
+                            </li>
+                            <li>
+                                <div class="icon-03 li-icon">
+                                    <img src="./images/icon-03.jpg" alt="">
+                                </div>
+                                <i>游戏论坛</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 电子竞技 -->
+        <div class="jingji-show">
+            <em class="jingji-icon-t"></em>
+            <div class="jingji-show-t">
+                <div class="jingji-top">
+                    <div class="w1 jingji-content">
+                        <ul>
+                            <div class="c-none"></div>
+                            <li>
+                                <img src="./images/esports_owe_406b944b488a9252.png" alt="">
+                                <p>守望先锋电竞官网</p>
+                            </li>
+                            <li>
+                                <img src="./images/esports_hsgs_8c998dc53d545314.png" alt="">
+                                <p>炉石传说黄金系列赛</p>
+                            </li>
+                            <li>
+                                <img src="./images/esports_sc2gl_dfaef15b194ab10f.png" alt="">
+                                <p>星际争霸II黄金职业联赛</p>
+                            </li>
+                            <li>
+                                <img src="./images/esports_w3gl_0f452de71eefc91b.png" alt="">
+                                <p>星际争霸III黄金职业联赛</p>
+                            </li>
+                            <div class="c-none"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="jingji-bot">
+                    <div class="w1 jingji-link">
+                        <ul>
+                            <li>
+                                <div class="icon-01 li-icon">
+                                    <img src="./images/icon-01.jpg" alt="">
+                                </div>
+                                <i>更多赛事</i>
+                            </li>
+                            <li>
+                                <div class="icon-02 li-icon">
+                                    <img src="./images/icon-04.jpg" alt="">
+                                </div>
+                                <i>申请暴雪电竞赛事授权</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 我的账户 -->
+        <div class="zhanghu-show">
+            <em class="zhanghu-icon-t"></em>
+            <ul>
+                <li class="zhanghu-login">
+                    <div class="login">登录</div>
+                    <div class="login-shadow"></div>
+                </li>
+                <li class="zhanghu-bt">
+                    <i class="icon-05">
+                        <img src="./images/icon-05.jpg" alt="">
+                    </i>
+                    <p>账户</p>
+                </li>
+                <li class="zhanghu-bt">
+                    <i class="icon-05">
+                        <img src="./images/icon-06.jpg" alt="">
+                    </i>
+                    <p>免费注册</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- video模块 -->
+    <div class="video">
+        <video class="VideoPane-video" src="./video/S199GBA7HG581572581461800.mp4"
+            data-src="https://cms.cnc.blzstatic.cn/cms/gallery/s1/S199GBA7HG581572581461800.mp4" loop="loop"
+            muted="muted" autoplay="autoplay" playsinline="playsinline" width="100%"></video>
+
+        <div class="banner1">
+            <div class="w2">
+                <i class="logo-15">
+                    <img src="./images/Logo_wow_anniversary_small.2c0e47b94115ae855d9e6fed0b8bad02.png" alt="">
+                </i>
+                <ul class="banner1-l">
+                    <li class="banner1-youxi">游戏
+                        <i class="banner1-youxi-icon"></i>
+                    </li>
+                    <li>新闻</li>
+                    <li>论坛</li>
+                    <li>商城</li>
+                    <li>《魔兽世界》经典怀旧服</li>
+                </ul>
+                <ul class="banner1-r">
+                    <li class="banner1-search">
+                        <i class="banner1-search-icon">
+                            <img src="./images/Icon_search_gold.39a918438bf176aa9e86d746beb9c97e.png" alt="">
+                        </i>
+                    </li>
+                    <li>登录</li>
+                    <li class="freegame">免费体验</li>
+                </ul>
+            </div>
+        </div>
+        <div class="video-content">
+            <h1>迈入暗影界</h1>
+            <p>生死之间的帷幕已经当然无存。探索彼岸的世界，尽在魔兽史诗的新篇章-------《暗影国度》！</p>
+            <div class="libao">立即购买礼包
+                <div class="libaonei"></div>
+            </div>
+            <div class="tansuo">探索
+                <div class="tansuonei"></div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news-top">
+                <i>新闻及更新</i>
+                <em>查看所有新闻</em>
+            </div>
+            <div class="news-content">
+                <ul>
+                    <li>
+                        <img src="./images/QLRDCULG2Q921539221489695.jpg" alt="">
+                        <div class="time">
+                            <i>2019年12月16日</i>
+                            <h1>《争霸艾泽拉斯》假日活动：世界任务</h1>
+                        </div>
+                        <div class="icon-hf">
+                            <i>&#xe7a9;</i>
+                            <em>0</em>
+                        </div>
+
+                    </li>
+                    <li>
+                        <img src="./images/ZKJJ7DDQR8AO1545708232326.jpg" alt="">
+                        <div class="time">
+                            <i>2019年12月16日</i>
+                            <h1>冬幕节的礼物来了！</h1>
+                        </div>
+                        <div class="icon-hf">
+                            <i>&#xe7a9;</i>
+                            <em>0</em>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/OA3C3H88O0N51575343095595.jpg" alt="">
+                        <div class="time">
+                            <i>2019年12月16日</i>
+                            <h1>暴雪游戏X乌镇&nbsp;神秘菜单线索揭秘</h1>
+                        </div>
+                        <div class="icon-hf">
+                            <i>&#xe7a9;</i>
+                            <em>0</em>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/43YSOQ7405ET1576805771028.jpg" alt="">
+                        <div class="time">
+                            <i>2019年12月16日</i>
+                            <h1>《恩佐斯的幻象》将于1月16日正式上线</h1>
+                        </div>
+                        <div class="icon-hf">
+                            <i>&#xe7a9;</i>
+                            <em>0</em>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 内容模块 -->
+    <div class="content">
+        <div class="con1">
+            <img src="./images/RWVPBMDY7BO91576823738443.jpg" alt="">
+        </div>
+    </div>
 </body>
+
 </html>
